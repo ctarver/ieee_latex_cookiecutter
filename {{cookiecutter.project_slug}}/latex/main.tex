@@ -1,0 +1,93 @@
+\documentclass[conference]{style/IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+
+\ifCLASSOPTIONcompsoc
+\usepackage[caption=false, font=normalsize, labelfont=sf, textfont=sf]{subfig}
+\else
+\usepackage[caption=false, font=footnotesize]{subfig}
+\fi
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmiccomment}[1]{\bgroup\hfill//~#1\egroup}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+%\usepackage[hyphens]{url}
+%\usepackage{hyperref}
+%\Urlmuskip=0mu plus 1mu
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, chains}
+\def\layersep{1.5cm}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\newcommand{\z}{\mathpzc{z}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[noadjust]{cite}
+\renewcommand{\citepunct}{,\penalty\citepunctpenalty\,}
+\renewcommand{\citedash}{--}% optionally
+\bibliographystyle{IEEEtran}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{groupplots}
+\usepgfplotslibrary{dateplot}
+
+\newcommand{\abs}[1]{\textcolor{red}{[abs: #1]}}
+
+\usepackage[nolist,nohyperlinks]{acronym}
+
+%% Colors that we want to globally define and use
+%% Consider using http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3 to get RGB values
+\definecolor{color1}{RGB}{35,139,69}
+\definecolor{color2}{RGB}{254,178,76} 
+\definecolor{color3}{RGB}{254,217,118} 
+\definecolor{color4}{RGB}{34,94,168} 
+\definecolor{color5}{RGB}{252,197,192}
+\definecolor{color6}{RGB}{228,26,28} 
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
+
+\title{ {{cookiecutter.paper_title}}
+\thanks{The work of {{cookiecutter.first_author}} was supported by someone.}
+}
+
+\author{\IEEEauthorblockN{
+	{{cookiecutter.first_author}} \IEEEauthorrefmark{1} and
+	{{cookiecutter.second_author}}\IEEEauthorrefmark{2}
+}%
+	\IEEEauthorblockA{\IEEEauthorrefmark{1}{{cookiecutter.first_author_affiliation}}}%	
+	\IEEEauthorblockA{\IEEEauthorrefmark{2}{{cookiecutter.second_author_affiliation}}}
+}
+	
+
+\maketitle
+
+\begin{abstract}
+your abstract here
+\end{abstract}
+
+\begin{IEEEkeywords}'
+ieee, keywords
+\end{IEEEkeywords}
+
+%% Go update the acronyms .tex file with everything
+\input{acronyms.tex} 
+
+\section{Introduction}
+Efficiently correcting nonlinearities  in \acp{PA} through \ac{DPD} is critical for enabling next-generation mobile broadband where there may be multiple \ac{RF} \ac{TX} chains arranged to form a massive \ac{MIMO} system~\cite{2014_MassiveMimo}, as well as new waveforms with bandwidths on the order of 100~MHz in the case of mmWave communications~\cite{2014_mmwave}. 
+
+
+\section{Conclusions}
+In this paper, we did some good science. Everyone should cite this paper.
+
+\bibliography{refs}
+\end{document}

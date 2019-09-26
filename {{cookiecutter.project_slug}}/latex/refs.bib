@@ -1,0 +1,38 @@
+{% raw %}
+@preamble{ " \newcommand{\noop}[1]{} " } % a do-nothing command that serves a purpose
+
+@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+	CTLuse_forced_etal       = "yes",
+	CTLmax_names_forced_etal = "6",
+	CTLnames_show_etal       = "1" 
+}
+
+
+## PUT YOUR BIBS BELOW HERE.
+
+@ARTICLE{2014_MassiveMimo, 
+	author={E. G. {Larsson} and O. {Edfors} and F. {Tufvesson} and T. L. {Marzetta}}, 
+	journal={IEEE Commun. Mag.}, 
+	title={Massive {MIMO} for next generation wireless systems}, 
+	year={2014}, 
+	volume={52}, 
+	number={2}, 
+	pages={186-195}, 
+	abstract={Multi-user MIMO offers big advantages over conventional point-to-point MIMO: it works with cheap single-antenna terminals, a rich scattering environment is not required, and resource allocation is simplified because every active terminal utilizes all of the time-frequency bins. However, multi-user MIMO, as originally envisioned, with roughly equal numbers of service antennas and terminals and frequency-division duplex operation, is not a scalable technology. Massive MIMO (also known as large-scale antenna systems, very large MIMO, hyper MIMO, full-dimension MIMO, and ARGOS) makes a clean break with current practice through the use of a large excess of service antennas over active terminals and time-division duplex operation. Extra antennas help by focusing energy into ever smaller regions of space to bring huge improvements in throughput and radiated energy efficiency. Other benefits of massive MIMO include extensive use of inexpensive low-power components, reduced latency, simplification of the MAC layer, and robustness against intentional jamming. The anticipated throughput depends on the propagation environment providing asymptotically orthogonal channels to the terminals, but so far experiments have not disclosed any limitations in this regard. While massive MIMO renders many traditional research problems irrelevant, it uncovers entirely new problems that urgently need attention: the challenge of making many low-cost low-precision components that work effectively together, acquisition and synchronization for newly joined terminals, the exploitation of extra degrees of freedom provided by the excess of service antennas, reducing internal power consumption to achieve total energy efficiency reductions, and finding new deployment scenarios. This article presents an overview of the massive MIMO concept and contemporary research on the topic.}, 
+	keywords={access protocols;antenna arrays;frequency division multiplexing;MIMO communication;next generation wireless systems;massive MIMO;multiuser MIMO;single-antenna terminals;resource allocation;time-frequency bins;frequency-division duplex operation;large-scale antenna systems;very large MIMO;hyper MIMO;full-dimension MIMO;ARGOS;service antennas;time-division duplex operation;MAC layer;intentional jamming;MIMO;Base stations;Antenna arrays;Uplink;Fading;Downlink}, 
+	doi={10.1109/MCOM.2014.6736761}, 
+	ISSN={0163-6804}, 
+	month={Feb.},}
+@ARTICLE{2014_mmwave, 
+	author={W. {Roh} and J. {Seol} and J. {Park} and B. {Lee} and J. {Lee} and Y. {Kim} and J. {Cho} and K. {Cheun} and F. {Aryanfar}}, 
+	journal={IEEE Commun. Mag.}, 
+	title={Millimeter-Wave Beamforming as an Enabling Technology for {5G} Cellular Communications: Theoretical Feasibility and Prototype Results}, 
+	year={2014}, 
+	volume={52}, 
+	number={2}, 
+	pages={106-113}, 
+	keywords={anechoic chambers (electromagnetic);array signal processing;cellular radio;millimetre wave propagation;telecommunication traffic;millimeter-wave beamforming;hybrid beamforming;5G cellular communications;4G cellular networks;next generation cellular systems;mobile communications;mobile traffic volume;cellular usage;nonline-of-sight coverage;channel measurement;United States;Korea;free space propagation measurements;anechoic chamber;Array signal processing;Antenna arrays;Millimeter wave communication;Radio frequency;Prototypes;Propagation losses;Receiving antennas;Next generation networking}, 
+	doi={10.1109/MCOM.2014.6736750}, 
+	ISSN={0163-6804}, 
+	month={Feb.},}
+{% endraw %}

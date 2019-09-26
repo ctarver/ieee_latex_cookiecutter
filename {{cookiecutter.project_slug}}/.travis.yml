@@ -1,0 +1,8 @@
+dist: trusty # Ubuntu 14.04
+services: docker # Enables docker
+
+before_install:
+- docker build .
+
+script:
+- bundle exec rake test
